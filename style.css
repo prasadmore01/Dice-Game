@@ -21,9 +21,14 @@
 .container p{
     text-align: center;
     margin-top: -15px;
+    color: gray;
+    font-size: 18px;
+    
 }
 
 #dice{
+    width: 80px;
+    height: 80px;
     padding: 5px 20px;
     border: 4px solid blueviolet;
     border-radius: 10px;
@@ -31,6 +36,9 @@
     font-weight: 700;
     color: blueviolet;
     margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button{
@@ -48,4 +56,17 @@ button:hover{
     cursor: pointer;
     background-color: gray;
     color: white;
+}
+
+
+.animate{
+    animation-name: roll;
+    animation-duration: 1s;
+    /* animation-iteration-count: 6; */
+}
+@keyframes roll{
+    from{}
+    to{
+        transform: rotate(360deg);
+    }
 }
